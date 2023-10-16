@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import React from 'react';
+import {BrowserRouter as Router , Route ,Routes ,Link ,BrowserRouter} from 'react-router-dom';
+import But from './Components/Button';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+   <h1 style={{}} >background Changer </h1>
+   <div id='div1' >
+   <But color ={"red"}  name={"red"} ></But>
+   <But color ={"Blue"} name={"Blue"} ></But>
+   <But color ={"Green"} name={"Green"} ></But>
+   <But color ={"Pink"} name={"pink"} ></But>
+   <But color ={"Purple"} name={"purple"} ></But>
+   <But color ={"Cyan"} name={"Cyan"} ></But>
+   <But color ={"Yellow"} name={"yellow"} ></But>
+   <But color ={"brown"} name={"brown"} ></But>
+   </div>
+   </>
+    
   );
 }
 
